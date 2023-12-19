@@ -27,29 +27,32 @@
 
   </head>
   <body>
-
-    <div class="top_bar">
-      <div class="container-fluid">
-        <div class="row align_center">
-          <div class="col">
-            <div class="top_social">
-              <ul>
-              <li><p>CONTACT US</p></li>          
-              <li><a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
-              <li><a href="#" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li>
-              <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-              <li><a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
-              <li><a href="#" class="email"><i class="fa-solid fa-envelope"></i></a></li>
-              </ul>
-          </div>
-          </div>
-          <div class="col justify-content-end d-flex">
-            <a href="#"><p>Sign In</p></a> <span style="font-size: 12px; color:#fff" >&nbsp;|&nbsp;</span>
-            <a href="#"><p>Sign Up</a></p>
-          </div>
+<!-- ======= Top bar ======= -->
+<div class="top_bar">
+  <div class="container-fluid">
+    <div class="row align_center">
+      <div class="col">
+        <div class="top_social">
+          <ul>
+          <li><p>CONTACT US</p></li>          
+          <li><a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+          <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href="#" class="email"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
       </div>
-    </div>
+      </div>
+
+      <div class="col justify-content-end d-flex">
+        <a href="login.html"><p>Sign In</p></a> <span style="font-size: 12px; color:#fff" >&nbsp;|&nbsp;</span>
+        <a href="register.html"><p>Sign Up</a></p>
+      </div>
+    
   </div>
+</div>
+</div>
+
 
 <!-- ======= Mobile Header ======= -->
 
@@ -63,11 +66,17 @@
         <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">Governing Panel</a></li>
-        <li><a class="nav-link scrollto" href="#services">About Us</a></li>
-        <li><a class="nav-link scrollto active" href="#hero">Exposoure Hall</a></li>
-        <li><a class="nav-link scrollto" href="#about">Concluded Stories</a></li>
-        <li><a class="nav-link scrollto" href="#services">Contact Info</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Governing Panel</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+          <a class="dropdown-item" href="Governing Panel_ExecutiveBody.html">Executive Body</a>
+          <a class="dropdown-item" href="Governing Panel_DepartmentalBody.html">Departmental Body</a>
+          </div>
+        </li> 
+        <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
+        <li><a class="nav-link scrollto active" href="ExposureHall.html">Exposoure Hall</a></li>
+        <li><a class="nav-link scrollto" href="ConcludedStories.html">Concluded Stories</a></li>
+        <li><a class="nav-link scrollto" href="contact.html">Contact Info</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -86,8 +95,14 @@
         <nav id="" class="desktop_navbar">
         <ul>
         <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-        <li><a class="nav-link scrollto" href="#about">Governing Panel</a></li>
-        <li><a class="nav-link scrollto" href="#services">About Us</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Governing Panel</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown04">
+          <a class="dropdown-item" href="Governing Panel_ExecutiveBody.html">Executive Body</a>
+          <a class="dropdown-item" href="Governing Panel_DepartmentalBody.html">Departmental Body</a>
+          </div>
+        </li> 
+        <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -99,9 +114,9 @@
     <div class="col-md-4"> 
       <nav id="" class="desktop_navbar">
       <ul class="uln">
-        <li><a class="nav-link scrollto active" href="#hero">Exposoure Hall</a></li>
-        <li><a class="nav-link scrollto" href="#about">Concluded Stories</a></li>
-        <li><a class="nav-link scrollto" href="#services">Contact Info</a></li>
+        <li><a class="nav-link scrollto active" href="ExposureHall.html">Exposoure Hall</a></li>
+        <li><a class="nav-link scrollto" href="ConcludedStories.html">Concluded Stories</a></li>
+        <li><a class="nav-link scrollto" href="Contact.html">Contact Info</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav>
@@ -111,7 +126,6 @@
 
   </div>
 </header>
-
 
 
   <!-- Hero Slider -->
@@ -414,13 +428,6 @@
   </div>
 </footer>
 <!-- End Footer -->
-
-
-
-
-
-
-
 
 
   <!--== JS Files ==-->
