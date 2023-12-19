@@ -19,36 +19,38 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/dd9b60c7a0.js" crossorigin="anonymous"></script>
 
 
-  <!-- Template Main CSS File -->
+<!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 </head>
-
 <body>
+  
 <!-- ======= Top bar ======= -->
-  <div class="top_bar">
-    <div class="container-fluid">
-      <div class="row align_center">
-        <div class="col">
-          <div class="top_social">
-            <ul>
-            <li><p>CONTACT US</p></li>          
-            <li><a href="https://www.facebook.com/austcareerdevelopmentclub" class="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
-            <li><a href="https://www.facebook.com/messages/t/100476282519829" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li>
-            <li><a href="https://www.linkedin.com/company/austcdc/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://instagram.com/austcdc?igshid=YmMyMTA2M2Y=" class="instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
-            <li><a href="https://mail.google.com/mail/?view=cm&source=mailto&to=austcdc@aust.edu" class="email"><i class="fa-solid fa-envelope"></i></a></li>
-          </ul>
-        </div>
-        </div>
-        <div class="col justify-content-end d-flex">
-          <a href="login.html"><p>Sign In</p></a> <span style="font-size: 12px; color:#fff" >&nbsp;|&nbsp;</span>
-          <a href="register.html"><p>Sign Up</a></p>
-        </div>
-    </div>
+<!-- ======= Top bar ======= -->
+<div class="top_bar">
+  <div class="container-fluid">
+    <div class="row align_center">
+      <div class="col">
+        <div class="top_social">
+          <ul>
+          <li><p>CONTACT US</p></li>          
+          <li><a href="#" class="facebook"><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href="#" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a></li>
+          <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="#" class="instagram"><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href="#" class="email"><i class="fa-solid fa-envelope"></i></a></li>
+        </ul>
+      </div>
+      </div>
+
+      <div class="col justify-content-end d-flex">
+        <a href="login.html"><p>Sign In</p></a> <span style="font-size: 12px; color:#fff" >&nbsp;|&nbsp;</span>
+        <a href="register.html"><p>Sign Up</a></p>
+      </div>
+    
   </div>
+</div>
 </div>
 
 <!-- ======= Mobile Header ======= -->
@@ -63,10 +65,16 @@
           <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="governing_panel.html">Governing Panel</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Governing Panel</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <a class="dropdown-item" href="Governing Panel_ExecutiveBody.html">Executive Body</a>
+            <a class="dropdown-item" href="Governing Panel_DepartmentalBody.html">Departmental Body</a>
+            </div>
+          </li> 
           <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
-          <li><a class="nav-link scrollto active" href="captureCollection.html">Exposoure Hall</a></li>
-          <li><a class="nav-link scrollto" href="event.html">Concluded Stories</a></li>
+          <li><a class="nav-link scrollto active" href="ExposureHall.html">Exposoure Hall</a></li>
+          <li><a class="nav-link scrollto" href="ConcludedStories.html">Concluded Stories</a></li>
           <li><a class="nav-link scrollto" href="contact.html">Contact Info</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -86,7 +94,13 @@
           <nav id="" class="desktop_navbar">
           <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="governing_panel.html">Governing Panel</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Governing Panel</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
+            <a class="dropdown-item" href="Governing Panel_ExecutiveBody.html">Executive Body</a>
+            <a class="dropdown-item" href="Governing Panel_DepartmentalBody.html">Departmental Body</a>
+            </div>
+          </li> 
           <li><a class="nav-link scrollto" href="about.html">About Us</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -99,9 +113,9 @@
       <div class="col-md-4"> 
         <nav id="" class="desktop_navbar">
         <ul class="uln">
-          <li><a class="nav-link scrollto active" href="captureCollection.html">Exposoure Hall</a></li>
-          <li><a class="nav-link scrollto" href="event.html">Concluded Stories</a></li>
-          <li><a class="nav-link scrollto" href="contact.html">Contact Info</a></li>
+          <li><a class="nav-link scrollto active" href="ExposureHall.html">Exposoure Hall</a></li>
+          <li><a class="nav-link scrollto" href="ConcludedStories.html">Concluded Stories</a></li>
+          <li><a class="nav-link scrollto" href="Contact.html">Contact Info</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
@@ -382,7 +396,7 @@
 <!--=== AUSTCDC EVENTS === -->
 <section class="event">
 <h1 class="text-center">EVENTS</h1>
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide eventCarousel" data-ride="carousel">
   <div class="carousel-inner">
     <!-- Slide 1 -->
     <div class="carousel-item active">
@@ -584,10 +598,10 @@
               </p>
               <h3> SOCIAL MEDIA</h3>
               <div class="social-links mt-3">
-                <a href="https://www.facebook.com/austcareerdevelopmentclub" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="https://www.facebook.com/messages/t/100476282519829" class="messenger"><i class="bx bxl-messenger"></i></a>
-                <a href="https://instagram.com/austcdc?igshid=YmMyMTA2M2Y=" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/austcdc/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://www.facebook.com/austcareerdevelopmentclub" class="facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://www.facebook.com/messages/t/100476282519829" class="messenger"><i class="fa-brands fa-facebook-messenger"></i></a>
+                <a href="https://www.linkedin.com/company/austcdc/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a></li>
+                <a href="https://instagram.com/austcdc?igshid=YmMyMTA2M2Y=" class="instagram"><i class="fa-brands fa-square-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -654,11 +668,12 @@
   <!--== JS Files ==-->
 
 
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/dd9b60c7a0.js" crossorigin="anonymous"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
