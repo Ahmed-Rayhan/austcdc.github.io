@@ -1,0 +1,187 @@
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+#header .logo img {
+    width: auto;
+}
+body {
+    background: #ffffff;
+    font-family: "Roboto", sans-serif;
+}
+.banner h2{
+    color: #fff;
+    font-size: 70px;
+    font-family: "Ubuntu";
+    font-weight: 700;
+    margin-top: -200px;
+    margin-bottom: 30px;
+    line-height: 30px;
+
+}
+section{
+    padding: 0;
+}
+.banner h3{
+    color: #fff;
+    font-size: 50px;
+    line-height: 28px;
+    margin-bottom: 35px;
+}
+.login-page {
+        width: 100%;
+        padding: 25% 15%;
+        margin: 0;
+        background-color: #ffffff;
+}
+.no-padding {
+    padding-right: 0;
+    padding-left: 0;
+}
+.color1{
+
+}
+.loginform{
+ 
+margin: -10px auto 100px;
+   background-color: #fff !important;
+}
+/* margin: -100px auto 100px; */
+.form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+}
+
+.form input {
+    font-family: "Ubuntu", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+    opacity: .7;
+}
+img {
+    width: 100%; 
+    height: auto; 
+    
+}
+.banner img{
+    height: 300px;
+}
+.login-form h1{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    color: #1b1c41;
+    font-weight: 700;
+}
+.login-form p{
+    
+}
+.form .login-form button {
+    font-family: "Ubuntu", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #1b1c41;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    width: 100;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form .message {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #1b1c41;}
+ .rgbtn{
+    text-decoration: none !important;
+    color: #1b1c41 !important;
+    font-size: 15px;
+}
+
+.form .message a:hover{
+    text-decoration: none !important;
+    color: #e62d39;
+}
+
+
+   /* Medium devices (tablets, less than 992px) */
+   @media (max-width: 990px) { 
+    .banner h2 {
+        font-size: 50px;
+   }
+   .banner h3 {
+    font-size: 40px;
+   }
+   .form .message {
+    font-size: 10px;
+    }
+    .rgbtn {
+        font-size: 10px;
+    }
+
+}
+.pain img{
+    display: block !important;
+}
+  /* Small devices (landscape phones, less than 768px) */
+  @media (max-width: 802px) {
+    .banner h2 {
+        font-size: 35px;
+   }
+   .banner h3 {
+    font-size: 30px;
+   }
+     .loginform {border-radius: 10px; 
+         padding: 50px;} 
+    .login-page {
+            width: 100%;
+            padding: 0% 15%;
+
+}   .login-form h1{
+    padding-top: 35px;
+}
+}
+@media (min-width: 575px) and (max-width: 765px) {
+    .login-page {
+        padding: 0% 5%; /* Adjust this value as needed */
+    }
+    
+    .col-md-6, .col-sm-1 {
+        padding: 0; /* Adjust or remove if not needed */
+    }
+}
+
+  /* X-Small devices (portrait phones, less than 576px) */
+  @media (max-width: 575px) { 
+    .pain img{
+        display: none !important;
+    }
+    .banner h2 {
+        font-size: 29px;}
+        .banner h3 {
+            font-size: 25px;
+        }
+   }
+
+ /* XX-Small devices (portrait phones, less than 421px) */
+   @media (max-width: 420px) {
+
+   }
