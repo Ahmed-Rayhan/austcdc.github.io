@@ -1,17 +1,11 @@
 
-/**
-* Check out variables.css for easy customization of colors, typography, and other repetitive properties
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-/* :root {
+:root {
   scroll-behavior: smooth;
-} */
-
-*{
-  font-family: 'Ubuntu';
 }
+
 a {
   color: var(--color-links);
   text-decoration: none;
@@ -95,18 +89,19 @@ section {
 }
 
 .section-header h2 {
-  font-family: 'Ubuntu';
-  font-size: 70px;
-  font-weight: 700;
+  font-size: 62px;
+  font-weight: 300;
   margin-bottom: 20px;
-  color: #1B1C41;
+  color: var(--color-secondary-dark);
+  -webkit-text-stroke: 0.5px #0849ac; 
+  text-shadow: 1px var(--color-secondary-light-rgb);
 }
 
 .section-header1 h2 {
   font-size: 45px;
   font-weight: 350;
   margin-bottom: 20px;
-  color: #1B1C41
+  color: var(--color-primary-dark);
 }
 
 .section-line {
@@ -118,7 +113,7 @@ section {
 
 .section-header p {
   margin: 0 auto;
-  color: #1B1C41;
+  color: var(--color-secondary-light);
 }
 
 @media (min-width: 1280px) {
@@ -224,61 +219,6 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-.header {
-  padding: 15px 0;
-  transition: all 0.5s;
-  z-index: 997;
-}
-
-.header.sticked {
-  background: var(--color-white);
-  box-shadow: 0px 2px 20px rgba(var(--color-secondary-rgb), 0.1);
-}
-
-.header .logo img {
-  max-height: 40px;
-  margin-right: 6px;
-}
-
-.header .logo h1 {
-  font-size: 32px;
-  font-weight: 300;
-  color: var(--color-secondary);
-  font-family: var(--font-secondary);
-}
-
-.header .logo h1 span {
-  color: var(--color-primary);
-  font-weight: 500;
-}
-
-.header .btn-getstarted,
-.header .btn-getstarted:focus {
-  font-size: 16px;
-  color: var(--color-white);
-  background: var(--color-primary);
-  padding: 8px 23px;
-  border-radius: 4px;
-  transition: 0.3s;
-  font-family: var(--font-secondary);
-}
-
-.header .btn-getstarted:hover,
-.header .btn-getstarted:focus:hover {
-  color: var(--color-white);
-  background: rgba(var(--color-primary-rgb), 0.85);
-}
-
-@media (max-width: 1279px) {
-
-  .header .btn-getstarted,
-  .header .btn-getstarted:focus {
-    margin-right: 50px;
-  }
-}
 
 /*--------------------------------------------------------------
 # Desktop Navigation 
@@ -2013,88 +1953,84 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Team Section
+# Team
 --------------------------------------------------------------*/
-.team .team-member .member-img {
-  border-radius: 8px;
-  overflow: hidden;
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border: 1px #587495;
+  border-radius: 5px;
+  background: #4c525808;
+  transition: 0.5s;
+  height: 100%;
 }
 
-.team .team-member .social {
-  position: absolute;
-  left: 0;
-  top: -18px;
-  right: 0;
-  opacity: 0;
+.team .member .pic {
+  overflow: hidden;
+  width: 180px;
+  border-radius: 50%;
+}
+
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+
+.team .member:hover {
+  transform: translateY(-10px);
+}
+
+.team .member .member-info {
+  padding-left: 30px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+  color: var(--color-secondary);
+}
+
+.team .member .social {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.team .member .social a {
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
-    border-radius: 10px;
+  border-radius: 50px;
+  width: 40px;
+  height: 40px;
+  background: #eff2f8;
 }
 
-.team .team-member .social a {
-  transition: color 0.3s;
-  color: var(--color-white);
-  background: var(--color-primary);
-  margin: 0 5px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  transition: 0.3s;
-}
-
-.team .team-member .social a i {
-  line-height: 0;
+.team .member .social a i {
+  color: var(--color-primary);
   font-size: 16px;
-}
-
-.team .team-member .social a:hover {
-  background: var(--color-primary-light);
-}
-
-.team .team-member .social i {
-  font-size: 18px;
   margin: 0 2px;
 }
 
-.team .team-member .member-info {
-  padding: 30px 15px;
-  text-align: center;
-  box-shadow: 0px 2px 15px rgba(var(--color-black-rgb), 0.1);
-  background: #fff;
-  margin: -50px 20px 0 20px;
-  position: relative;
-  border-radius: 8px;
+.team .member .social a:hover {
+  background: var(--color-links-hover);
 }
 
-.team .team-member .member-info h4 {
-  font-weight: 400;
-  margin-bottom: 5px;
-  font-size: 24px;
-  color: var(--color-secondary);
+.team .member .social a:hover i {
+  color: #fff;
 }
 
-.team .team-member .member-info span {
-  display: block;
-  font-size: 16px;
-  font-weight: 400;
-  color: var(--color-gray);
-}
-
-.team .team-member .member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: var(--color-gray);
-}
-
-.team .team-member:hover .social {
-  opacity: 1;
+.team .member .social a+a {
+  margin-left: 8px;
 }
 
 /*--------------------------------------------------------------
